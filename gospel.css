@@ -1,0 +1,100 @@
+html
+{
+    height: 100%;
+background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4b…);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body {
+    text-align: center;
+    padding: 0 0px;
+    height: 100%;
+}
+
+    #cspio-page {
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3) 0%,rgba(0, 0, 0, 0.2) 37%,rgba(0,0,0,0) 68%,rgba(0,0,0,0) 100%);
+}
+
+#cspio-page {
+    display: flex;
+    padding: 10px;
+}
+
+#cspio-content {
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+#cspio-headline {
+    font-family: 'Pacifico';
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 1.00em;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+
+
+
+#cspio-logo 
+{
+    margin-bottom: 30px;
+    width:156px;
+}
+
+
+
+#cspio-description{
+margin-bottom: 30px;
+font-family: Helvetica, Arial, sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.50em;
+color: #ffffff;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fff;text-align: center;
+-webkit-animation: glow 1s ease-in-out infinite alternate;
+-moz-animation: glow 1s ease-in-out infinite alternate;
+animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+
+to {
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+}
+}
+
+.btn-fb {
+    color: #fff;
+    background-color: #3b5998 !important;
+    height: 33px;
+    width: 47px;
+}
+.btn-yt {
+    color: #fff;
+    background-color: #ed302f !important;
+    height: 33px;
+    width: 47px;
+}
+.btn-email {
+    color: #fff;
+    background-color: #4b515d !important;
+    height: 33px;
+    width: 47px;
+}

@@ -4,10 +4,8 @@ body {
   }
   
   .topnav {
-    overflow: hidden;
-   
+    overflow: hidden;  
     transform: translate3d(0, 0, 0);
-    float:right;
     -webkit-transform: translate3d(0, 0, 0);
   }
   
@@ -45,6 +43,7 @@ body {
     font-size: 0.875em;
     text-decoration: none;
     padding: 1em 2em;
+    width:11%;
     margin-top: 2em;
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
@@ -81,6 +80,7 @@ body {
       text-align: left;
       margin-top: auto;
       color: chocolate;
+      width:auto;
       background-color: white;
     }
     .topnav.responsive a:hover {
@@ -91,7 +91,7 @@ body {
 
   header[role="banner"] {
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 3;
     -webkit-transition: all 0.15s ease-in-out;
     -moz-transition: all 0.15s ease-in-out;
@@ -148,7 +148,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 #home {
     /* background: #d24d57 url(../images/header-bg.jpg) 50% 0 no-repeat fixed; */
-    padding: 17.5em 0;
+    padding: 8.5em 0;
     color: #fff;
     text-align: center;
     -webkit-transition: padding 0.2s linear;
@@ -172,6 +172,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	}
 }
 
+@media screen and (max-width: 640px){
+  #home{
+    padding: 17.5em 0;
+  }
+}
 div, article, section, header, footer, nav, li {
     position: relative;
 }
@@ -180,6 +185,7 @@ div, article, section, header, footer, nav, li {
     margin: 0 auto;
     width: 90%;
     max-width: 1600px;
+    padding-bottom: 22px;
 }
 
 #logo {
@@ -283,3 +289,156 @@ div, article, section, header, footer, nav, li {
     border-bottom: 3px solid transparent;
 }
 
+#hello {
+  background: url(nia.jpg);
+  border-bottom: 1px solid #f1f1f1;
+  padding: 7.5em 0;
+  text-align: center;
+}
+
+
+
+#aboutme h2 {
+  font-size: 2.5em;
+  color: #3b3838;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 0.625em;
+  text-transform: uppercase;
+}
+
+#aboutme p {
+  color: #f30101;
+  font-size: 1.375em;
+  font-style: italic;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+}
+
+.btn-hldr {
+  text-align: center;
+  width:fit-content;
+  display:inline-block;
+}
+
+@media (min-width: 992px){
+.btn-hldr .main-btn {
+    display: inline-block;
+}
+}
+
+.btn-hldr .main-btn {
+  font-size: .8em;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: .75em 2em .75em 3.5em;
+  color: #521010;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-family: -webkit-pictograph;
+  font-size: 19px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), not all, not all, (min-resolution: 1.5dppx){
+.btn-hldr .main-btn i.email {
+    background-image: url(../img/content/home/contact/mail@2x.png);
+    background-size: 24px 15px;
+}
+}
+
+.btn-hldr:hover {
+
+  background-color: white;
+  color: white;
+}
+
+.container1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1200px){
+.container1 {
+    max-width: 1140px;
+}
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+.list-inline-item {
+  display: inline-block;
+}
+
+.btn-floating i {
+  display: inline-block;
+  width: inherit;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-floating i {
+  font-size: 1.25rem;
+  line-height: 47px;
+}
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998 !important;
+}
+
+.btn-floating {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  width: 47px;
+  height: 47px;
+}
+
+.btn-gplus {
+  background-color: #dd4b39 !important;
+}
+.btn-li {
+  background-color: #0082ca !important;
+}
+
+.btn-git {
+  
+  background-color: white !important;
+}
+
+.special-color-dark {
+  background-color: #263238 !important;
+}
+
+.pt-4, .py-4 {
+  padding-top: 1.5rem !important;
+}
