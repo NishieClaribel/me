@@ -1,13 +1,158 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" href="favicon-32x32.png" type="image/gif" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 45px;
+  color: #186eb9;
+    font-variant: petite-caps;
+}
+
+#btn_container
+{
+    width:32px;
+    float:left;
+    position: relative;
+}
+.xlarge-font {
+  font-size: 64px;
+  color: brown;
+  font-family: cursive;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+.banner-static .banner-content .appilo-thm-btn {
+    -webkit-box-shadow: 0px 15px 30px rgba(212, 50, 151, 0.27);
+    box-shadow: 0px 15px 30px rgba(212, 50, 151, 0.27);
+}
+
+.appilo-thm-btn{
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+}
+.appilo-thm-btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: #6541c1;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+    background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    border-radius: 28px;
+    padding: 15px 29px;
+    position: relative;
+}
+
+.banner-static .banner-content .appilo-thm-btn.borderd {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.banner-static .banner-content .appilo-thm-btn + .appilo-thm-btn {
+    margin-left: 15px;
+}
+
+.banner-static .banner-content .appilo-thm-btn {
+    -webkit-box-shadow: 0px 15px 30px rgba(212, 50, 151, 0.27);
+    box-shadow: 0px 15px 30px rgba(212, 50, 151, 0.27);
+}
+
+.appilo-thm-btn.borderd {
+    color:#ffffff;
+}
+</style>
 </head>
 <body>
 
-<h2>Hello world!</h2>
-<p>Open this page in a <a href="tryhtml5_link_sizes.htm" target="_blank">new window</a> to see the favicon.</p>
-<p><b>Note:</b> The sizes attribute is not currently supported in any of the major browsers.</p>
+
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Promise Bible Verse App</b></h1>
+      <h1 class="large-font"><b>Your word has given me life. Psalm 119:50</b></h1>
+      <p style="    font-size: xx-large;
+      font-family: -webkit-body;
+      font-style: oblique;">Want to get a Promise Bible Verse and Promise Song? This app can be used during New Years to get a promise Bible Verse and a promise song.</p>  
+      <a href="https://play.google.com/store/apps/details?id=com.alfinish.alfinsamuel.promisebibleverse" target=_blank class="appilo-thm-btn">
+       <div id="btn_container"> <img src="playstore.png" style="width: 21px;
+        height: 20p;"></div><span>Download App</span>
+  </a>
+
+                          <a href="https://play.google.com/store/apps/details?id=com.alfinish.alfinsamuel.promisebibleverse" class="appilo-thm-btn borderd">
+          <span>More Info</span>
+  </a>
+    </div>
+    <div class="column-33">
+        <img src="promiseverse.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>

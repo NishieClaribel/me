@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="recentwork.css">
+</head>
+<body>
+<section id="top">
+        <div style="width: fit-content;
+        margin-top: 30px;
+        background-color: darkred;
+        border-radius: 50%;"><a href="./index.html">
+                    <i class="fas fa-home" style="color: aliceblue;
+                    font-size: 31px;"></i>
+                    </a>
+                </div>
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Promise Bible Verse App</b></h1>
+      <h1 class="large-font"><b>Your word has given me life. Psalm 119:50</b></h1>
+      <p style="    font-size: xx-large;
+      font-family: -webkit-body;
+      font-style: oblique;">Want to get a Promise Bible Verse and Promise Song? This app can be used during New Years to get a promise Bible Verse and a promise song.</p>  
+      <a href="https://play.google.com/store/apps/details?id=com.alfinish.alfinsamuel.promisebibleverse" target=_blank class="appilo-thm-btn">
+       <div id="btn_container"> <img src="playstore.png" style="width: 21px;
+        height: 20p;"></div><span>Download App</span>
+  </a>
+
+                          <a href="#info" class="appilo-thm-btn borderd">
+          <span>More Info</span>
+  </a>
+    </div>
+    <div class="column-33">
+        <img src="promiseverse.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="info">
+<div id="moreinfo" class="mySlides fade">
+       
+        <img src="verse1.png" style="width:60%">
+      </div>
+      
+      <div class="mySlides fade">
+       
+        <img src="verse12.png" style="width:60%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        
+        <img src="verse5.png" style="width:60%">
+     
+      </div>
+
+      <div class="mySlides fade">
+            
+            <img src="verse9.png" style="width:60%">
+            
+          </div>
+
+          <div class="mySlides fade">
+                
+                <img src="verse18.png" style="width:60%">
+                
+              </div>
+
+              <div class="mySlides fade">
+                   
+                    <img src="verse20.png" style="width:60%">
+                    
+                  </div>
+                  <div class="mySlides fade">
+                   
+                    <img src="godblessyou.jpg" style="width:60%">
+                    
+                  </div>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </section>
+      <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+
+</body>
+</html>
