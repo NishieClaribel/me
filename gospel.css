@@ -1,7 +1,7 @@
 html
 {
     height: 100%;
-background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4b…);
+background: #ffffff url(https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bâ€¦);
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -56,8 +56,8 @@ body {
 #cspio-description{
 margin-bottom: 30px;
 font-family: Helvetica, Arial, sans-serif;
-font-weight: 400;
-font-size: 20px;
+font-weight: bolder;
+font-size: 26px;
 line-height: 1.50em;
 color: #ffffff;
 }
@@ -98,3 +98,87 @@ to {
     height: 33px;
     width: 47px;
 }
+a{
+    text-decoration: none;
+    color: red;
+}
+
+#btn_container
+  {
+      width:32px;
+      float:left;
+      position: relative;
+  }
+
+  .appilo-thm-btn{
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+}
+.appilo-thm-btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    background: #6541c1;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+    background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+    background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    border-radius: 28px;
+    padding: 15px 29px;
+    position: relative;
+}
+.todaysdate {
+    font-family: futura;
+      font-weight: bolder;
+      color:#313131;
+      font-size:25px;
+      -webkit-animation:colorchange 20s infinite alternate;
+  }
+  @-webkit-keyframes colorchange {
+    0% {
+      color: blue;
+    }
+    
+    10% {
+      color: #8e44ad;
+    }
+    
+    20% {
+      color: #1abc9c;
+    }
+    
+    30% {
+      color: #d35400;
+    }
+    
+    40% {
+      color: blue;
+    }
+    
+    50% {
+      color: #34495e;
+    }
+    
+    60% {
+      color: blue;
+    }
+    
+    70% {
+      color: #2980b9;
+    }
+    80% {
+      color: #f1c40f;
+    }
+    
+    90% {
+      color: #2980b9;
+    }
+    
+    100% {
+      color: pink;
+    }
+  }
