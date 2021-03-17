@@ -4,12 +4,22 @@
         <link rel="icon" href="cross.png" type="image/gif" sizes="32x32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="gospel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function(){
+           $.ajax({
+              url:'https://dailyverses.net/get/verse?language=niv&isdirect=1&url=' + window.location.hostname,
+              dataType: 'JSONP',
+              success:function(json){
+                 $(".dailyVersesWrapper").prepend(json.html);
+              }
+           });
+        });
+     </script>
     </head>
     <body>
-<div style="width: fit-content;
-margin-top: 30px;
-background-color: darkred;
-border-radius: 50%;"><a href="./index.html">
+<div style="width: fit-content;margin-top: 30px;background-color: darkred;border-radius: 50%;">
+    <a href="./index.html">
             <i class="fas fa-home" style="color: aliceblue;
             font-size: 31px;"></i>
             </a>
@@ -19,12 +29,18 @@ border-radius: 50%;"><a href="./index.html">
                 
                 <img id="cspio-logo" src="gospelicon.png">
                                     
-                <h1 class="glow" id="cspio-headline">Coming Soon...</h1>			    				
+                <p id="date" class="todaysdate"></p>
+
+                <h1 class="glow" id="cspio-headline">Verse of the day</h1>			    				
                 
-                <div id="cspio-description">"Be still, and know that I am God. I will be exalted among the nations, I will be exalted in the earth!" The LORD of hosts is with us; the God of Jacob is our fortress." </div>			    				
+                <div id="cspio-description" class="dailyVersesWrapper"> </div>			    				
                 
-               
-                
+                <a href="https://www.biblica.com/bible/niv/" target=_blank class="appilo-thm-btn">
+                    <div id="btn_container"> <img src="playstore.png" style="width: 21px;
+                     height: 20p;"></div><span>Read Bible</span>
+               </a>
+                <br>
+                <br>
                                                                                                                                                     
                 <div id="cspio-socialprofiles">
                         <button type="button" class="btn btn-fb waves-effect waves-light" onclick="pageRedirectfb()"><i class="fab fa-facebook-f" style="font-size: 18px;"></i></button>
@@ -37,6 +53,7 @@ border-radius: 50%;"><a href="./index.html">
                                                                                                                                                                                              
             </div><!-- end of #cspio-content -->
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
         <script>
                 function pageRedirectfb() {
@@ -46,7 +63,7 @@ border-radius: 50%;"><a href="./index.html">
 
 <script>
         function pageRedirectmail() {
-            window.open("mailto:nishieclaribel@gmail.com");
+            window.open("mailto:gospel.jesusislord@gmail.com");
         }      
     </script>
 
@@ -55,5 +72,25 @@ border-radius: 50%;"><a href="./index.html">
             window.open("https://www.youtube.com/user/gospeljesusislord");
         }      
     </script>
+<script>
+var _href = $("a.appilo-thm-btn").attr("href");
+var n=$("div.dailyVerses").text();
+var n2 = n.lastIndexOf(".");
+var n3=n.lastIndexOf(" ");
+var res2 = n.slice(n2+1,n3);
+
+let w= res2.toString();
+var n4=n.lastIndexOf(":");
+var res = n.slice(n3+1,n4);
+var e=String(res);
+$("a.appilo-thm-btn").attr("href", _href + w);
+</script>
+
+<script>
+    var dateString = new Date().toUTCString();
+dateString = dateString.split(' ').slice(0, 4).join(' ');
+document.getElementById("date").innerHTML = dateString;
+</script>
     </body>
 </html>
+
